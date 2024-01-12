@@ -1,0 +1,10 @@
+:8080
+
+root * /usr/share/caddy/html
+
+header * {
+	Cross-Origin-Embedder-Policy require-corp
+	Cross-Origin-Opener-Policy same-origin
+	Access-Control-Allow-Origin "*"
+}
+file_server
